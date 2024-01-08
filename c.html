@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Styling untuk container carousel */
+      .carousel {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      /* Styling untuk gambar dalam carousel */
+      .carousel img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      /* Menyembunyikan gambar kecuali yang pertama */
+      .carousel img:not(:first-child) {
+        opacity: 0;
+      }
+
+      /* Efek transisi gambar */
+      .carousel:hover img {
+        opacity: 0.5;
+      }
+
+      /* Menampilkan gambar yang sedang dihover */
+      .carousel img:hover {
+        opacity: 1;
+      }
+    </style>
+   
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="gambar1.jpg" alt="Gambar 1" />
+      <img src="gambar2.jpg" alt="Gambar 2" />
+      <img src="gambar3.jpg" alt="Gambar 3" />
+    </div>
+
+    
+  </body>
+</html>
